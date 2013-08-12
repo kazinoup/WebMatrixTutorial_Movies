@@ -1,0 +1,14 @@
+﻿@{
+  var db = Database.Open("Movies");
+  var sqlQ = "SELECT * FROM Favorites";
+  var data = db.Query(sqlQ);
+}
+
+<div id="movieslist">
+  <ol>
+    @foreach(var row in data)
+    {
+      <li><a href="#">@row.Name, @row.Genre, @row.ReleaseYear</a></li>
+    }
+  </ol>
+</div>
