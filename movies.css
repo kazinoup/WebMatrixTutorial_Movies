@@ -47,3 +47,10 @@ footer {
   background-color: #e7f5f8;
   text-decoration: none;
 }
+
+body h1 {
+  font-size: xx-large;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px;
+}
